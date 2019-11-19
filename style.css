@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 300px;
+    margin: 50px auto 0;
+}
+
+.box {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.box:first-child {
+    background-image: linear-gradient(to top, #00008b, #0000ff);
+    position: absolute;
+    top: 10px;
+    left: 30%;
+    z-index: 2;
+}
+
+.box:nth-child(2) {
+    background-image: linear-gradient(to top, #8b0000, #ff0000);
+    position: absolute;
+    top: 40px;
+    left: 31.5%;
+    z-index: 1;
+}
+
+.box:nth-child(3) {
+    background-image: linear-gradient(to top, #004200, #009c00);
+    position: absolute;
+    top: 70px;
+    left: 33%;
+}
+
+.box:last-child {
+    background-image: linear-gradient(to top, #685801, #ffd700);
+    position: absolute;
+    top: 100px;
+    left: 34.5%;
+    z-index: 1;
+}
+
+.info {
+    border-radius: 10px;
+    background-color: #c9f2ff;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.info span:first-of-type {
+    color: #000079;
+    border-color: #000079;
+}
+
+.info span:last-of-type {
+    color: #af0202;
+    border-color: #af0202;
+}
+
+.info:not(strong) {
+    color: #006100;
+    font-weight: bold;
+    border-bottom: 2px solid #006100;
+}
+
+.form {
+    background-color: #90ee90;
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form input {
+    display: block;
+    width: 80%;
+    margin: 0 auto 10px;
+    font-size: 1em;
+    border: 2px solid transparent;
+    color: #333;
+    padding: 3px 6px;
+}
+
+.form input:last-of-type {
+    margin-bottom: 20px;
+}
+
+.form input:focus {
+    box-shadow: 0 3px 5px #111;
+}
+
+.form button {
+    border: none;
+    background-image: linear-gradient(to top, #333, #ccc);
+    color: #fff;
+    font-size: 1em;
+    padding: 5px 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.form button:focus,
+.form button:hover {
+    box-shadow: 0 3px 5px #111;
+    background-image: linear-gradient(to bottom, #ccc, #fff);
+    color: #111;
+}
+
+ol li ul {
+    list-style-type: none;
+}
+
+ul li:nth-child(3) {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    line-height: 80px;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px #111;
+    text-shadow: 0 2px 5px #111;
+    background-image: linear-gradient(to top right, #5c0101, #ff0000);
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+ul li:not(:nth-child(3)),
+li ol {
+    display: none;
+}
